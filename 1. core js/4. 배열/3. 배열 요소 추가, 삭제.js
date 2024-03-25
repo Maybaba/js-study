@@ -12,12 +12,12 @@ console.log(pets);
 //concat.pets.() :  combines two or more arrays
 
 
-var myPet1 = pets.pop();
-pets.pop();
-var myPet2 = pets.pop();
+var myPet1 = pets.push('메롱');
+// pets.pop();
+// var myPet2 = pets.pop();
 
 console.log(pets);
 console.log(myPet1);
-console.log(myPet2); //배열에서 지운 것을 다시 변수로 담을 수 있다. 
+// console.log(myPet2); //배열에서 지운 것을 다시 변수로 담을 수 있다. 
 
 

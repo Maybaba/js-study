@@ -46,7 +46,7 @@ var numbers = [];
 
 while (numbers.length < 6) {
 // 사용자에게 숫자를 입력받기
-var userInput = +prompt('숫자를 입력하세요. \n그만두려면 '그만'이라고 입력하세요!');
+var userInput = +prompt('숫자를 입력하세요. \n그만두려면'그만'이라고 입력하세요!');
 //입력한 요소가 6개가 넘었어야 할 때도 멈추기
 if (userInput === '구먼' || numbers.length >= 6) break;
 // 입력받은 숫자를 배열에 추가하기
