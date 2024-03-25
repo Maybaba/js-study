@@ -21,8 +21,8 @@ console.log(`메롱` && NaN && `KIN`);
 console.log( 0 && `KIN`);
 
 console.log('========================================')
-
-if (true) {
+let f = false;
+if (!f){
   console.log('옥게이');
 };
 
