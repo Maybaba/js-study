@@ -29,7 +29,7 @@ var cat = {
 
 //다른 집 강아지 정보 저장
 var dog = {
-  name : '뽀삐',
+  name : 2233445,
   kind : '진돗개',
   age : 3,
   injection : true,
@@ -74,23 +74,23 @@ console.log(dog['name']);
 console.log(dog[key]);
 // console.log(dog[name]);
 
-//프로퍼티 수정 : 기존에 있는 key로 접근
-console.log("========================");
+// //프로퍼티 수정 : 기존에 있는 key로 접근
+// console.log("========================");
 
-dog.age = 4;
-cat.favorite[6] = '실뭉치';
+// dog.age = 4;
+// cat.favorite[6] = '실뭉치';
 
-console.log(dog);
-console.log(cat);
+// console.log(dog);
+// console.log(cat);
 
-//프로퍼티 동적 추가 기존에 없는 key로 접근
-console.log("=================================");
+// //프로퍼티 동적 추가 기존에 없는 key로 접근
+// console.log("=================================");
 
-cat.friend = '윤종';
+// cat.friend = '윤종';
 
-console.log(cat);
+// console.log(cat);
 
-//프로퍼티 삭제
-delete cat.hate;
+// //프로퍼티 삭제
+// delete cat.hate;
 
-console.log(cat);
+// console.log(cat);
