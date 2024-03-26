@@ -18,9 +18,8 @@ var selectMenu = +prompt(`원하는 메뉴를 선택해주세요! \n현재 멤�
     alert (`멤버가 다음과 같이 추가되었습니다 : ${tvxq}`); 
   }
   else if (selectMenu == 1) {
-    while (true) {
       var modify = prompt(`수정할 멤버 이름을 입력해주세요. 현재 멤버 : [${tvxq}]`); 
-      if (tvxq.includes(modify)) {
+      if (tvxq.includes(modify)) { //또 안에서 안돌게끔 while을 빼서 해보기
         var i = tvxq.indexOf(modify);
         var modified = prompt(`새로운 이름을 입력해주세요.`);
         tvxq.splice(i, 1, modified);
@@ -28,11 +27,9 @@ var selectMenu = +prompt(`원하는 메뉴를 선택해주세요! \n현재 멤�
         break;
       } else {
       alert (`입력한 멤버${modify}는 없는 멤버입니다. 다시 입력해 주세요...`);
-      } 
     }
   }
   else if (selectMenu == 2 ) {
-  while (true) {
     var deleted = prompt(`삭제할 멤버 이름을 입력해주세요. 현재 멤버 : [${tvxq}]`); 
     if (tvxq.includes(deleted)) {
      var i = tvxq.indexOf(deleted);
@@ -41,7 +38,6 @@ var selectMenu = +prompt(`원하는 메뉴를 선택해주세요! \n현재 멤�
      break;
     } else {
      alert (`입력한 멤버${deleted}는 없는 멤버입니다. 다시 입력해 주세요...`);
-    }
   }
 }
   else if (selectMenu == 3) {
@@ -89,6 +85,33 @@ var selectMenu = +prompt(`원하는 메뉴를 선택해주세요! \n현재 멤�
 //   if (input === 3) {
 //     alert(`프로그램을 종료합니다.`);
 //     break;
+//   }
+// }
+
+
+//선생님풀이
+// while (true) {
+//   var choice = prompt(
+//     `현재 멤버: [${tvxq}]\n메뉴를 선택하세요.\n1. 새로운 이름 추가\n2. 기존 이름 삭제\n3. 프로그램 종료`
+//   );
+//   if (choice === '1') {
+//     var newName = prompt('추가할 새로운 멤버의 이름을 입력하세요.');
+//     tvxq.push(newName);
+//     alert(`${newName}이(가) 추가되었습니다.`);
+//   } else if (choice === '2') {
+//     var delName = prompt('삭제할 멤버의 이름을 입력하세요.');
+//     var idx = tvxq.indexOf(delName);
+//     if (idx !== -1) { //찾기는 찾았다! 라서 인덱스를 그렇게 복잡하게 찾을 필요가 없다...
+//       tvxq.splice(idx, 1);
+//       alert(`${delName}이(가) 삭제되었습니다.`);
+//     } else {
+//       alert(`${delName}은(는) 잘못된 이름입니다.\n다시 입력하세요!`);
+//     }
+//   } else if (choice === '3') {
+//     alert('프로그램을 종료합니다.');
+//     break;
+//   } else {
+//     alert('잘못된 입력입니다. 메뉴 번호를 정확하게 입력해주세요.');
 //   }
 // }
 
