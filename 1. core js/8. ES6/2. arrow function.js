@@ -35,5 +35,7 @@ kim.greeting();
 
 //정수 1개를 전달하면 해당 정수의 제곱값을 리턴하는 화살표함수 pow 작성
 
+
+
 const pow = n => n ** 2; //param 1개일경우에만 소괄호 생략 가능 그외는 써야한다.
 console.log(pow(3));

@@ -12,7 +12,7 @@ console.log(pets);
 //concat.pets.() :  combines two or more arrays
 
 
-var myPet1 = pets.push('메롱');
+var myPet1 = pets.push({1 : [1, 2, 4, { 1 : 11}]});
 // pets.pop();
 // var myPet2 = pets.pop();
 
