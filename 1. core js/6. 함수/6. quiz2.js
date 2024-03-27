@@ -23,11 +23,6 @@ function judgeWeignt (BMI) {
   console.log(`당신은 ${level} 체중입니다. `);
 
 }
-//어떤 숫자를 자릿수만큼 반올림하는 함수
-function round (number, position) {
-  return Math.round(number * 100) / 100; 
-  // return number.toFixed(position) + 100;
-}
 
 function calcBMI(h, w) {
   var m = h/100;
@@ -36,6 +31,11 @@ function calcBMI(h, w) {
   judgeWeignt(BMI);
   
   return BMI;
+}
+//어떤 숫자를 자릿수만큼 반올림하는 함수
+function round (number, position) {
+  return Math.round(number * 100) / 100; 
+  // return number.toFixed(position) + 100;
 }
 
 var h = 178.4, w = 100.2;
