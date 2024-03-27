@@ -29,7 +29,7 @@ log(`zzz`);
       일급 객체라 할 수 있다.
  */
 
-//익명함수 : 함수를 literal 로 본 경우
+//anonymous function : 함수를 literal 로 본 경우
 //fuction expression : 함수표현!!!!식!!!!
 const multiply = function (n1, n2) {
   return n1 * n2;

@@ -24,7 +24,7 @@ hobby = '그림';
 
 // ...code 
 
-// var hobby; // var : 자동으로 맨위로 끌어올려서 호이스팅된다 
+// var hobby; // var : hoisting automatically 
 let hobby;
 console.log(hobby);
 
