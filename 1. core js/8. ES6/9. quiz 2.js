@@ -55,57 +55,58 @@ function minSalary () {
 
 }
 
-const getMinSalary = minSalary() {};
+const getMinSalary = minSalary() {
+
+};
 
 
 
 
 
-// //퀴즈 풀이
-// function min(userList, property) {
-//   // userList가 비어있으면 null을 반환
-//   if (userList.length === 0) {
-//     return null;
-//   }
+// //퀴즈 풀이, 자리뺏기 알고리즘
+function min(userList, property) {
+  // userList가 비어있으면 null을 반환
+  if (userList.length === 0) {
+    return null;
+  }
 
-//   let minValueUser = userList[0]; // 최소값을 가진 객체를 첫 번째 사용자로 초기화
+  let minValueUser = userList[0]; // 최소값을 가진 객체를 첫 번째 사용자로 초기화
 
-//   // userList를 순회하면서 주어진 속성의 최소값을 찾음
-//   for (const user of userList) {
-//     if (user[property] < minValueUser[property]) {
-//       minValueUser = user;
-//     }
-//   }
+  // userList를 순회하면서 주어진 속성의 최소값을 찾음
+  for (const user of userList) {
+    if (user[property] < minValueUser[property]) { //문자열의 키값은 점으로 참조할 수 없으므로 대괄호 참조를 통해서 키의 값을 참조한다. 
+      minValueUser = user;
+    }
+  }
 
-//   return minValueUser;
-// }
+  return minValueUser;
+}
 
 
-// function find(callback) {
-//   for (const user of userList) {
-//     if (callback(user)) {
-//       return user;
-//     }
-//   }
-//   return undefined;
-// }
+function find(callback) {
+  for (const user of userList) {
+    if (callback(user)) {
+      return user;
+    }
+  }
+  return undefined;
+}
 
-// function some(callback) {
-//   for (const user of userList) {
-//     if (callback(user)) {
-//       return true;
-//     }
-//   }
-//   return false;
-// }
+function some(callback) {
+  for (const user of userList) {
+    if (callback(user)) {
+      return true;
+    }
+  }
+  return false;
+}
 
-// function every(callback) {
-//   for (const user of userList) {
-//     if (!callback(user)) {
-//       return false;
-//     }
-//   }
-//   return true;
-// }
+function every(callback) {
+  for (const user of userList) {
+    if (!callback(user)) {
+      return false;
+    }
+  }
+  return true;
+}
 
-//

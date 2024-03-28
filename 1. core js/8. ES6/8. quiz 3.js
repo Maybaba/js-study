@@ -58,10 +58,10 @@ const userList = [
 //서울을 포함한 인덱스를 찾아서 새로운 배열에 저장함
 //새로운 배열에서 0번째 인덱스 리턴
 function find(callback) {
-  const mappedArray = [];
+  const mappedArray = []; //어차피 첫 true값을 반환하기 때문에 배열 안받아도 된다람쥐. 선생님 풀이 참조
   for (const user of userList) {
     if (callback(user)) {
-      mappedArray.push(user);
+      mappedArray.push(user); 
     }
   }
   return mappedArray[0];
@@ -79,7 +79,7 @@ function some(callback) {
       upperSalary500.push(user.salary);
     }
   }
-  console.log(upperSalary500);
+  // console.log(upperSalary500);
   if (upperSalary500.length >= 1) {
     return `true`;
   } else {
@@ -108,3 +108,5 @@ function every(callback) {
 // 모든 사용자가 '서울'에 사는지 확인하는 예시
 const allUsersInSeoul = every((user) => user.address === "서울");
 console.log("모든 사용자가 서울에 사는가?:", allUsersInSeoul);
+
+
